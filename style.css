@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 98%);
+}
+.main-container {
+  height: 100vh;
+  margin: 35px;
+  font-family: "Poppins", sans-serif;
+}
+.h1 {
+  text-align: center;
+  font-weight: 400;
+  color: hsl(234, 12%, 34%);
+}
+b {
+  color: black;
+}
+.p {
+  text-align: center;
+  margin-top: 22px;
+  color: hsl(234, 12%, 34%);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 80px 80px 80px;
+  column-gap: 14px;
+  row-gap: 14px;
+  margin: 15px 60px 15px 60px;
+}
+.box {
+  background-color: white;
+  padding: 15px;
+  border-radius: 2%;
+  box-shadow: 0px 5px 8px hsl(229, 6%, 66%);
+}
+.box1 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.box2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+.box4 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.box3 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+.box p {
+  font-size: 15px;
+  color: hsl(234, 12%, 34%);
+  background-color: white;
+  margin-top: 10px;
+}
+.box h3 {
+  background-color: white;
+}
+.icon-1 {
+  float: right;
+  height: 40px;
+}
+.icon-2 {
+  float: right;
+  height: 40px;
+}
+.icon-3 {
+  float: right;
+  height: 40px;
+}
+.icon-4 {
+  float: right;
+  height: 40px;
+}
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .box1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-top: 4px solid hsl(180, 62%, 55%);
+  }
+  .box2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-top: 4px solid hsl(0, 78%, 62%);
+  }
+  .box4 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-top: 4px solid hsl(34, 97%, 64%);
+  }
+  .box3 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-top: 4px solid hsl(212, 86%, 64%);
+  }
+}
